@@ -10,6 +10,7 @@ api(jsonList, () => {
 })
 
 server.on('request', (request, response) => {
+    console.log('new request')
     response.statusCode = 200
     response.setHeader('Content-Type', 'application/json');
     response.write(JSON.stringify(jsonList))
