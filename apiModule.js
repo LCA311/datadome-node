@@ -36,6 +36,11 @@ function sync(jsonList, callback) {
 							"term":{  
 								"smart_html":"<p>&nbsp;</p>"
 							}
+						},
+						{  
+							"term":{  
+								"smart_html":"<h*>&nbsp;</h*>"
+							}
 						}
 					],
 					"minimum_should_match":1,
