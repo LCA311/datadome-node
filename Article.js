@@ -1,5 +1,5 @@
 class Article {
-    constructor(id, categoryIds, geo, title, abstractText, articleText, dates, adress, postalCode) {
+    constructor(id, categoryIds, geo, title, abstractText, articleText, dates, address, postalCode) {
         this.id = id
         this.geo = geo
         this.title = title
@@ -7,7 +7,7 @@ class Article {
         this.abstractText = abstractText
         this.articleText = articleText
         this.dates = dates
-        this.adress = adress
+        this.address = address
         this.postalCode = postalCode
     }
 }
