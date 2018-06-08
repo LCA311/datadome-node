@@ -6,7 +6,7 @@ let jsonList = []
 
 api(jsonList, () => {
     console.log("Finished synchronisation")
-    server.listen(8080)
+    server.listen(process.env.PORT || 8080)
 })
 
 server.on('request', (request, response) => {
