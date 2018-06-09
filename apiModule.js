@@ -6,7 +6,7 @@ module.exports = function (jsonList, callback) { sync(jsonList, callback) }
 function sync(jsonList, callback) {
     var postData = JSON.stringify({  
 			"from":0,
-			"size":663,
+			"size":500,
 			"query":{  
 				"bool":{  
 					"must":[  
@@ -47,6 +47,36 @@ function sync(jsonList, callback) {
 					"should":[  
 						{  
 							"term":{  
+								"categories.id":"41"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"42"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"44"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"6"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"74"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"61"
+							}
+						},
+						{  
+							"term":{  
 								"categories.id":"59"
 							}
 						},
@@ -57,12 +87,37 @@ function sync(jsonList, callback) {
 						},
 						{  
 							"term":{  
-								"categories.id":"61"
+								"categories.id":"63"
 							}
 						},
 						{  
 							"term":{  
-								"categories.id":"70"
+								"categories.id":"47"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"43"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"100"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"71"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"49"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"72"
 							}
 						},
 						{  
@@ -72,22 +127,32 @@ function sync(jsonList, callback) {
 						},
 						{  
 							"term":{  
-								"categories.id":"84"
+								"categories.id":"38"
 							}
 						},
 						{  
 							"term":{  
-								"categories.id":"103"
+								"categories.id":"26"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"7"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"328"
+							}
+						},
+						{  
+							"term":{  
+								"categories.id":"39"
 							}
 						},
 						{  
 							"term":{  
 								"categories.id":"101"
-							}
-						},
-						{  
-							"term":{  
-								"categories.id":"100"
 							}
 						}
 					]
